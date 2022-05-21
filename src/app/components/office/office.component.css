@@ -1,0 +1,54 @@
+h4 {
+
+
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.2px;
+    font-size: 50px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+
+}
+.contain{
+  background-color: #f2f2f2;
+}
+
+/* .col{
+  background-color: #ffff;
+
+} */
+.col {
+  background-color: #ffff;
+  margin-right: 120px;
+  text-align: center;
+  position: relative;
+  transition: all .3s ease;
+}
+.col:hover{
+  transform: translateY(-20px);
+}
+.col:hover::after{
+  content:'';
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #00BE7D;
+}
+.container{
+  padding: 5px 100px 50px;
+}
+
+*{
+  font-family: "Open Sans Condensed", Sans-serif;
+}
+.t1{
+  padding-top: 20px ;
+}
