@@ -1,0 +1,19 @@
+.our-work {
+    position: relative;
+}
+
+.our-work-header {
+    text-align: center;
+    color: white;
+    top: 10%;
+}
+
+.our-work-header img {
+}
+
+.text-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}

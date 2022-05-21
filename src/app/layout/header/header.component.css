@@ -1,75 +1,85 @@
-a,
-a:hover {
-    text-decoration: none;
-}
-
-header {
+.header{
+    font-family: 'Rubik', sans-serif;
+    background-color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
     top: 0;
     left: 0;
-    right: 0;   
-    background-color: #fff;
+    right: 0;
 }
 
-.home-page {
-
+.navbar{
+    justify-content: flex-end;
+    margin-right: 1.5rem;
 }
 
-.home-page img {
+.active{
+    color: #000;
+    font-weight: bold;
+}
+
+.logo{
+    margin-left: 2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.logo-img{
     width: 60%;
+    margin-right: 10px;
 }
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    align-items: center;
-}
-
-.nav-page {
-    color: #00BE7D;
+.logo-name{
     font-size: 1.2rem;
-    font-weight: 500;
+    letter-spacing: 2px;
 }
 
-.nav-list {
-    display: flex;
-}
-
-.nav-item {
-
-}
-
-.nav-item-link {
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
     color: #00BE7D;
-    font-size: 16px;
-    padding: 13px;
-    /* transition: 0.25s ease-out; */
-    /* transition-timing-function: linear; */
 }
 
-.nav-item-link:hover {
-    border-bottom: #00BE7D 3px solid;
-    transition-timing-function: linear;
+.nav-btn{
+    /* font-size: 2rem; */
+    background-color: #fff;
+    border: none;
+    color: #00BE7D;
 }
 
-.nav-social {
-
-}
-
-.social-list {
+.nav-lang{
     display: flex;
+    padding: 0.5rem 1rem;
 }
 
 .social-item a svg {
     color: #00BE7D;
-    width: 18px;
-    margin: 18px;
+    margin: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar{
+        display: none;
+    }
+
+    .header{
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .nav-link{
+        color: #000;
+    }
+    .nav-link:hover{
+        color: #915858;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .off-sidebar {
+        display: none;
+    }
 }
