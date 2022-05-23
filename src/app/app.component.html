@@ -1,2 +1,35 @@
 
-<app-office></app-office>
+
+
+<p *ngFor = "let item of member; let x = index">
+  hello {{item.name}} {{item.age}} la phan tu thu {{x}}
+</p>
+
+<p *ngIf = ""> linh</p>
+
+<!-- <p *ngIf = "false; else tu"> Linh </p> -->
+<ng-template #tu>
+HIHIHI
+</ng-template>
+
+<p *ngIf = "false ; then b else tu"></p>
+<ng-template #b>
+  Linh qua xinh dep
+</ng-template>
+
+<div>
+  <div [ngSwitch]="">
+    <div *ngSwitchCase="'1'">One</div>
+    <div *ngSwitchCase="'2'">Two</div>
+    <div *ngSwitchCase="'3'">Three</div>
+    <div *ngSwitchCase="'4'">Four</div>
+    <div *ngSwitchCase="'5'">Five</div>
+    <div *ngSwitchDefault>This is Default</div>
+  </div>
+
+</div>
+<p [ngClass]="linh"> This is file </p>
+
+
+
+
