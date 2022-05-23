@@ -1,0 +1,55 @@
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #015b3d;
+}
+
+.twitter-post {
+    border: 1px solid rgba(0,0,0,.1);
+    max-width: 350px;
+    padding: 1rem 1rem;
+    background-color: #fff;
+}
+
+.twitter-post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.twitter-post-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.twitter-post-title > span {
+    color: #444;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin: 0 0.5rem;
+}
+
+.twitter-post-title {
+    padding: 0 0.5rem;
+}
+
+.published-time {
+    opacity: 0.8;
+}
+
+.read-more {
+    color: #00BE7D;
+}
+
+.twitter-post-item > img {
+    border-radius: 50%;
+    width: 2.4rem;
+}
+
+.short-content {
+    text-overflow: ellipsis;
+}
