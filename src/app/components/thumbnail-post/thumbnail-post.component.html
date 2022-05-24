@@ -1,26 +1,22 @@
 <div class="thumbnail-post col-sm-4">
     <div class="img-post-thumbnail">
         <a href="#" class="link-post">
-            <img src="https://sisuadigital.com/wp-content/uploads/2022/05/working-on-laptop-300x200.jpg" 
+            <img [src]="thumbnail_post.picture_link" 
             alt="" class="img-post">
         </a>
         <div class="category">
-            <span>Article</span>
+            <span>{{thumbnail_post.thumbnail_category}}</span>
         </div>
     </div>
 
     <div class="thumbnail-post-content">
         <a href="#" class="link-post">
             <h3 class="title-thumbnail-post">
-                INVOICE PROCESS AUTOMATION WITH AI AND RPA
             </h3>
         </a>
     
         <p class="short-content">
-            Processing invoices is mandatory yet time and resource 
-            consuming task for organizations. 
-            Read on as we discuss how RPA and 
-            AI has boosted our customers’ invoice processing.
+            {{thumbnail_post.thumbnail_content}}
         </p>
 
         <a href="#" class="read-more">
@@ -29,6 +25,7 @@
     </div>
 
     <div class="date-post">
-        <span>06/05/2022</span>
+        <span>{{thumbnail_post.thumbnail_date}}</span>
     </div>
-</div>
+</div>  
+
