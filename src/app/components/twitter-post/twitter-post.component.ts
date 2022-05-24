@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-twitter-post',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwitterPostComponent implements OnInit {
 
+  @Input() twitter_post ?: any;
   constructor() { }
 
   ngOnInit(): void {
