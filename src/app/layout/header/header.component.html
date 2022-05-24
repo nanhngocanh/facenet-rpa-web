@@ -1,27 +1,29 @@
 <header class="header">
-    <div class="logo">
-        <img  class="logo-img" src="https://sisuadigital.com/wp-content/uploads/2020/04/Logo_350x100px-e1590548152625.png"
-        alt="">
-    </div>
+    <a [routerLink]="''">
+        <div class="logo">
+            <img  class="logo-img" src="https://sisuadigital.com/wp-content/uploads/2020/04/Logo_350x100px-e1590548152625.png"
+            alt="">
+        </div>
+    </a>
     <div class="navbar">
         <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Service</a>
+              <a class="nav-link active" aria-current="page" [routerLink]="'service'">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our work</a>
+              <a class="nav-link" [routerLink]="'our-work'">Our work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" [routerLink]="'about-us'">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
+              <a class="nav-link" [routerLink]="'career'">Careers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Insights</a>
+                <a class="nav-link" [routerLink]="'insight'">Insights</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" [routerLink]="'contact'">Contact</a>
             </li>
             <li class="social-item">
                 <a href="#">

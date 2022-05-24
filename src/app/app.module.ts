@@ -21,6 +21,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CareerComponent } from './pages/career/career.component';
 import { InsightComponent } from './pages/insight/insight.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

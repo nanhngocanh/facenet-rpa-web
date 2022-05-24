@@ -1,0 +1,136 @@
+body{
+  width: 100%;
+
+}
+.Footer {
+  background-color: #F2F2F2;
+  height: 300px;
+  font-family: "Open Sans Condensed", Sans-serif;;
+}
+.logo {
+  width: 180px;
+  height: 55px;
+}
+.footer-nav {
+  float: left;
+}
+.info-footer-left {
+  padding-top: 50px;
+  padding-left: 50px;
+  float: left;
+  width: 30%;
+}
+.media a {
+  text-decoration: none;
+  color: black;
+  padding: 17px;
+}
+
+
+
+ul {
+  padding-left: 0;
+}
+ .info-footer-right {
+  float: right;
+  width: 70%;
+ }
+ .info-footer-right .footer-nav {
+   float: left;
+   width: 20%;
+
+ }
+ .info-footer-right .subscribe {
+   float: right;
+   width: 50%;
+   padding-right: 10px;
+   padding-top: 50px;
+ }
+ .info-footer-right .footer-nav .footer-nav-left {
+   float: left;
+   margin-top: 50px ;
+   margin-left: 0px;
+ }
+ .info-footer-right .footer-nav .footer-nav-left a {
+   text-decoration: none;
+   color: black;
+
+ }
+ .info-footer-right .footer-nav .footer-nav-left li {
+  padding: 10px;
+ }
+ .info-footer-right .footer-nav .footer-nav-right {
+   float: right;
+   margin-top: 50px;
+ }
+ .info-footer-right .footer-nav .footer-nav-right li {
+   padding: 10px;
+ }
+ .info-footer-right .footer-nav .footer-nav-right a {
+   text-decoration: none;
+   color: black;
+ }
+.info-footer-right .subscribe input{
+   margin-bottom: 10px;
+ }
+ .year {
+  text-align: center;
+  background-color: #F2F2F2;
+}
+.info-footer-right .subscribe a {
+  text-decoration: none;
+  color: #00BE7D;
+}
+.info-footer-right .subscribe p {
+  font-weight: bold;
+}
+
+.info-footer-right .subscribe .radio-form {
+  margin-right: 5px;
+}
+
+.info-footer-right .subscribe .name .email {
+  border: none;
+  background: white;
+  min-width: 300px;
+  height: 40px;
+  width: fit-content;
+} */
+/* body{
+  width: 100%;
+
+}
+.contain {
+    background-color: #f2f2f2;
+  
+  }
+  img {
+    width: 180px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  /* .col {
+    padding: 20px;
+    margin: 10px;
+  } */
+  .year {
+    text-align: center;
+  }
+  
+  .logo {
+    padding-left: 20px;
+  }
+  .media a {
+    padding: 20px;
+    margin: 10px;
+  }
+  .col-md p {
+    font-weight: bold;
+  }
