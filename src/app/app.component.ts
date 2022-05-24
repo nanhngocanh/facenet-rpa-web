@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'facenetrpa';
+  member : any[] = [
+    {
+      name : 'a',
+      age: 8
+    },
+    {
+      name : 'b',
+      age: 9
+    },
+    {
+      name : 'c',
+      age: 10
+    },
+
+  ];
+
+linh : any = {
+  'color' : true,
+  'size' : true
+}
+
 }

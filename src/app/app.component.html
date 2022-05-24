@@ -1,5 +1,45 @@
+<<<<<<< HEAD
+
+
+
+<p *ngFor = "let item of member; let x = index">
+  hello {{item.name}} {{item.age}} la phan tu thu {{x}}
+</p>
+
+<p *ngIf = ""> linh</p>
+
+<!-- <p *ngIf = "false; else tu"> Linh </p> -->
+<ng-template #tu>
+HIHIHI
+</ng-template>
+
+<p *ngIf = "false ; then b else tu"></p>
+<ng-template #b>
+  Linh qua xinh dep
+</ng-template>
+
+<div>
+  <div [ngSwitch]="">
+    <div *ngSwitchCase="'1'">One</div>
+    <div *ngSwitchCase="'2'">Two</div>
+    <div *ngSwitchCase="'3'">Three</div>
+    <div *ngSwitchCase="'4'">Four</div>
+    <div *ngSwitchCase="'5'">Five</div>
+    <div *ngSwitchDefault>This is Default</div>
+  </div>
+
+</div>
+<p [ngClass]="linh"> This is file </p>
+
+
+
+
+=======
 <app-header></app-header>
+<app-our-work></app-our-work>
 <app-career></app-career>
 <app-footer></app-footer>
 
 <app-thumbnail-post></app-thumbnail-post>
+<app-twitter-post></app-twitter-post>
+>>>>>>> 7a9ee136aa96dfd77306ad5ad37238f01347298d
