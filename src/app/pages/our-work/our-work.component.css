@@ -3,22 +3,85 @@
 }
 
 .our-work-header {
+    background-image: url(https://sisuadigital.com/wp-content/uploads/2020/05/man-working-machine.jpg);
+    background-repeat: no-repeat;
     text-align: center;
-    color: white;
-    top: 10%;
+    background-position: 0px -100px;
+    background-size: cover;
+    min-height: 31.2rem;
+    position: relative;
 }
 
-.header-img img {
-    /* max-height: 10rem; */
-        
-}
-
-.our-work-header{
-   position: relative;
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 31.2rem;
 }
 
 .text-header {
     position: absolute;
-    top: 50%;
-    right: 50%;
+    top: 40%;
+    right: 30%;
+    text-align: left;
+    padding: 0 18%;
+}
+
+.text-header h1, 
+.text-header p {
+    color: #fff;
+}
+
+.text-header h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-header p {
+    font-size: 1.1rem;
+}
+
+.text-bottom-line {
+    background-color: #00BE7D;
+    width: 13rem;
+    height: 0.3rem;
+}
+
+.content-part {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    padding: 0% 20% 0% 20%;
+}
+
+.content-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.content-detail {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.customers {
+    background-image: url(https://sisuadigital.com/wp-content/uploads/2020/05/glacier_logos.jpg);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.customers-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers-img img {
+    width: 40%;
 }

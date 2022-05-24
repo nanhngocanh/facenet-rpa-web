@@ -14,6 +14,8 @@ a:hover{
     border: 0 solid #818a91;
     max-width: 350px;
     transition: 0.4s;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 .thumbnail-post:hover {

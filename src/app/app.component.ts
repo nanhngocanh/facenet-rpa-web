@@ -6,26 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'facenetrpa';
-  member : any[] = [
+  thumbnail_post : any[] = [
     {
-      name : 'a',
-      age: 8
+      thumbnail_category: 'Article',
+      picture_link: 'https://sisuadigital.com/wp-content/uploads/2022/05/working-on-laptop-300x200.jpg',
+      thumbnail_title: 'INVOICE PROCESS AUTOMATION WITH AI AND RPA',
+      thumbnail_content: 'Processing invoices is mandatory yet time and resource consuming task for organizations. Read on as we discuss how RPA and AI has boosted our customers’ invoice processing.',
+      thumbnail_date: '06/05/2022'
     },
     {
-      name : 'b',
-      age: 9
+      thumbnail_category: 'Article',
+      picture_link: 'https://sisuadigital.com/wp-content/uploads/2022/05/working-on-laptop-300x200.jpg',
+      thumbnail_title: 'INVOICE PROCESS AUTOMATION WITH AI AND RPA',
+      thumbnail_content: 'Processing invoices is mandatory yet time and resource consuming task for organizations. Read on as we discuss how RPA and AI has boosted our customers’ invoice processing.',
+      thumbnail_date: '06/05/2022'
     },
     {
-      name : 'c',
-      age: 10
+      thumbnail_category: 'Article',
+      picture_link: 'https://sisuadigital.com/wp-content/uploads/2022/05/working-on-laptop-300x200.jpg',
+      thumbnail_title: 'INVOICE PROCESS AUTOMATION WITH AI AND RPA',
+      thumbnail_content: 'Processing invoices is mandatory yet time and resource consuming task for organizations. Read on as we discuss how RPA and AI has boosted our customers’ invoice processing.',
+      thumbnail_date: '06/05/2022'
     },
-
+    {
+      thumbnail_category: 'Article',
+      picture_link: 'https://sisuadigital.com/wp-content/uploads/2022/05/working-on-laptop-300x200.jpg',
+      thumbnail_title: 'INVOICE PROCESS AUTOMATION WITH AI AND RPA',
+      thumbnail_content: 'Processing invoices is mandatory yet time and resource consuming task for organizations. Read on as we discuss how RPA and AI has boosted our customers’ invoice processing.',
+      thumbnail_date: '06/05/2022'
+    }
   ];
-
-linh : any = {
-  'color' : true,
-  'size' : true
-}
 
 }
