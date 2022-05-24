@@ -37,4 +37,20 @@ export class AppComponent {
     }
   ];
 
+  twitter_post : any[] = [
+    {
+      publish_time: '2 weeks ago',
+      twitter_content: 'How to make an app with Power Apps? Watch our video (in finnish) which shows just how fast you can make an app: Power Apps is part of Microsoft\'s Power Platform which includes different low-code tools. Read more on our website:'
+    },
+    {
+      publish_time: '2 weeks ago',
+      twitter_content: 'How to make an app with Power Apps? Watch our video (in finnish) which shows just how fast you can make an app: Power Apps is part of Microsoft\'s Power Platform which includes different low-code tools. Read more on our website:'
+    },
+    {
+      publish_time: '2 weeks ago',
+      twitter_content: 'How to make an app with Power Apps? Watch our video (in finnish) which shows just how fast you can make an app: Power Apps is part of Microsoft\'s Power Platform which includes different low-code tools. Read more on our website:'
+    }
+  ];
+
+
 }

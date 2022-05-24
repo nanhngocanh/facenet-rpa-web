@@ -12,6 +12,8 @@ a:hover{
     max-width: 350px;
     padding: 1rem 1rem;
     background-color: #fff;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 .twitter-post-head {
