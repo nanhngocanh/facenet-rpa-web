@@ -85,3 +85,130 @@
 .customers-img img {
     width: 40%;
 }
+
+.get-touch {
+    width: 100%;
+    height: 800px;
+    display: block;
+    padding-bottom: 3rem;
+  
+  }
+  .title-form {
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00734D;
+  }
+  /* img{
+    width: 260px;
+    height:10px;
+  } */
+  a {
+    text-decoration: none;
+    color: #00BE7D;
+  }
+  .contact-with-left {
+    float: left;
+    /* margin-left: 60px; */
+    font-size: 17px;
+    /* margin-top: 30px; */
+  }
+  .contact-with-right {
+    float: right;
+    font-size: 17px;
+    /* margin-left: 10px; */
+  }
+  .input-form input {
+    border: none;
+    background: #F2F2F2;
+    min-width: 300px;
+    height: 40px;
+    width: 600px;
+  }
+  .radio-form {
+    border: none;
+    display: flex;
+    min-width: 300px;
+    margin-right: 10px;
+    align-items: baseline;
+  
+  }
+  .submit-form {
+  
+    min-width: 300px;
+    height: 40px;
+    width: 600px;
+  
+  
+  
+  }
+  .submit-form input {
+    border-color: #00BE7D;
+    background: #ffff;
+    width: 130px;
+    height: 50px;
+    border-radius: 50px ;
+    color: #00BE7D;
+  }
+  .submit-form input:hover {
+    background: #00BE7D;
+    color:#ffff;
+  }
+  .get-in-touch {
+    padding-top: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  }
+  #anouncement{
+    padding-left: 10px;
+  }
+  /* .contact-form {
+    padding: auto;
+  } */
+  #message {
+    height: 100px;
+  }
+  /* 7.member */
+  /* MANAGEMENT TEAM */
+  .management {
+    width: 100%;
+    height: 800px;
+    padding-top: 4rem;
+    padding-left: 120px;
+    text-align: center;
+    float: left;
+    background: #F2F2F2;
+  }
+  h4 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00734D;
+  }
+  .management-content {
+    border: 3px solid white;
+    width: 300px;
+    height: 550px;
+  
+    background-color: white;
+  }
+  .img-people {
+    width: 270px;
+    height: 350px;
+    padding: 1rem;
+  }
+  .do-dai-img {
+    width: 100px;
+    height: 10px;
+  }
+   .management div:hover {
+    border-bottom: 3px soild #00BE7D;
+  }
+  
+  management-in i {
+    background-image: radial-gradient(circle, #456BD9, #456BD9 66%, transparent 66%);
+    height: 5em;
+    width: 5em;
+  }
