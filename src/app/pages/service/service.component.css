@@ -1,0 +1,274 @@
+.services {
+    background-color: #f2f2f2;
+    height: 500px;
+    padding: 55px 203px;
+    display: block;
+}
+
+.services h2 {
+    color: #00734D;
+    text-align: center;
+    font-size: 45px;
+    font-family: "Open Sans Condensed", Sans-serif;
+    line-height: 1.1em;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+}
+
+.services p {
+    text-align: center;
+    color: #000000;
+    font-family: "Helvetica", Sans-serif;
+    font-weight: 300;
+    line-height: 1.7em;
+    padding-top: 15px;
+}
+
+.services a {
+    text-decoration: none;
+    color: #00BE7D;
+}
+
+.help-and-guide {
+    padding: 100px;
+}
+
+.help-and-guide h3 {
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.guide {
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    font-size: 17px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.contain a {
+    text-decoration: none;
+    color: #00BE7D;
+}
+
+.contain svg {
+    color: #00BE7D;
+}
+
+.contain img {
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+}
+
+.contain p,
+span {
+    text-align: center;
+}
+
+.contain p {
+    font-weight: bold;
+    margin: 30px 60px;
+    color: #00734D;
+    font-size: 20px;
+    font-family: "Open Sans Condensed", Sans-serif;
+}
+
+.contain span {
+    padding: 20px;
+}
+
+.industry-background {
+    background-color: #000000;
+    opacity: 0.7;
+    height: 480px;
+}
+
+.industry-title {
+    color: #ffff;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    font-size: 50px;
+    padding: 2rem 10rem;
+    font-weight: bold;
+    line-height: 1.1em;
+    letter-spacing: 0.2px;
+}
+.para-industry {
+    color: #ffff;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    padding: 0rem 14rem;
+    font-size: 20px;
+    --widgets-spacing: 20px;
+    line-height: 2.5rem;
+}
+
+.impact-of-automation {
+    height: 550px;
+}
+
+.impact-of-automation-title {
+    color: #00734D;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 3rem 8rem;
+}
+
+.col-md {
+    float: left;
+}
+
+.image-automation {
+    padding-left: 30px;
+    margin: 20px;
+    width: 120px;
+    height: 100px;
+}
+
+.info-automation {
+    color: #00734D;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding-left: 20px;
+    margin: 8px;
+    padding-top: 1rem;
+}
+
+.make-word {
+    background-color: #1d1d5a;
+    height: 450px;
+}
+
+.make-word p {
+    color: #ffff;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+}
+
+.make-word-titel {
+    font-weight: bold;
+    font-size: 45px;
+    padding: 4rem 8rem 2rem;
+}
+
+.bring-word {
+    padding: 0 15rem;
+    font-size: 17px;
+}
+
+.create-little {
+    padding: 0 15rem;
+    font-size: 17px;
+}
+.featured-word {
+    height: 600px;
+}
+
+.featured-word h1 {
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    color: #00734D;
+    padding-top: 3rem;
+}
+
+.automation-content {
+    float: left;
+}
+
+.impactful-automation {
+    height: 800px;
+}
+
+.title {
+    color: #00734D;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Open Sans Condensed", Sans-serif;
+    padding-top: 2rem;
+}
+
+.content-title {
+    display: block;
+    padding: 1rem 18rem;
+    font-size: 17px;
+    font-family: "Open Sans Condensed", Sans-serif;
+}
+
+.automation-content {
+    display: block;
+    padding: 2rem 20rem;
+    font-size: 17px;
+}
+
+.solution {
+    height: 400px;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.solution-content {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-family: "Open Sans Condensed", Sans-serif;
+    font-weight: bold;
+    padding: 9rem 12rem;
+}
+
+.learn-more-automation {
+    background-color: #f2f2f2;
+    height: 700px;
+}
+
+.image-learn {
+    max-width: 66%;
+    float: right;
+}
+
+.learn-title {
+    float: left;
+}
+
+.learn-content {
+    padding-top: 2rem;
+    color: #00734D;
+    font-family: "Open Sans Condensed", Sans-serif;
+}
+
+.learn-til {
+    padding-top: 4rem;
+    padding-right: 10rem;
+    font-weight: bold;
+    font-size: 45px;
+    color: #00734D;
+    font-family: "Open Sans Condensed", Sans-serif;
+}
+
+.work-and-start {
+    height: 400px;
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.work-and-start-content {
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Open Sans Condensed", Sans-serif;
+    padding: 8rem 13rem;
+}
+
+.detail {
+    height: 700px;
+}
