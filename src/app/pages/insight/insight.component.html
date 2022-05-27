@@ -1,1 +1,16 @@
-<p>insight works!</p>
+<div
+  class="insight-block"
+  style="
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  "
+>
+  <h1 style="margin-top: 10rem; text-align: center">News and blog posts</h1>
+  <div class="insight-list" style="display: flex; margin: 3rem">
+    <ng-container *ngFor="let item of items">
+      <app-thumbnail-post [thumbnail_post]="item"></app-thumbnail-post>
+    </ng-container>
+  </div>
+</div>

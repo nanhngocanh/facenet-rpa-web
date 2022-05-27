@@ -1,31 +1,26 @@
-<div class="thumbnail-post col-sm-4">
-    <div class="img-post-thumbnail">
-        <a href="#" class="link-post">
-            <img [src]="thumbnail_post.picture_link" 
-            alt="" class="img-post">
-        </a>
-        <div class="category">
-            <span>{{thumbnail_post.thumbnail_category}}</span>
-        </div>
+<div class="thumbnail-post">
+  <div class="img-post-thumbnail">
+    <a href="#" class="link-post">
+      <img [src]="thumbnail_post.backgroundImage" alt="" class="img-post" />
+    </a>
+    <div class="category">
+      <span>{{ thumbnail_post.name }}</span>
     </div>
+  </div>
 
-    <div class="thumbnail-post-content">
-        <a href="#" class="link-post">
-            <h3 class="title-thumbnail-post">
-            </h3>
-        </a>
-    
-        <p class="short-content">
-            {{thumbnail_post.thumbnail_content}}
-        </p>
+  <div class="thumbnail-post-content">
+    <a href="#" class="link-post">
+      <h3 class="title-thumbnail-post"></h3>
+    </a>
 
-        <a href="#" class="read-more">
-            Read More »
-        </a>
-    </div>
+    <p class="short-content">
+      {{ thumbnail_post.description }}
+    </p>
 
-    <div class="date-post">
-        <span>{{thumbnail_post.thumbnail_date}}</span>
-    </div>
-</div>  
+    <a href="#" class="read-more"> Read More » </a>
+  </div>
 
+  <div class="date-post">
+    <span>{{ thumbnail_post.updateDate | date }}</span>
+  </div>
+</div>
