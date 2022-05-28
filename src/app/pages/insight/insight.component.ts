@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class InsightComponent implements OnInit {
   items: any;
+  twitters: any;
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
@@ -16,5 +17,10 @@ export class InsightComponent implements OnInit {
       .subscribe((data) => {
         this.items = data;
       });
+
+    this.http.get('http://192.168.1.253:8080/twitterpost')
+    .subscribe((data) => {
+      this.twitters = data;
+    })
   }
 }
