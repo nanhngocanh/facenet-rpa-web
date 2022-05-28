@@ -1,50 +1,53 @@
 .featured-work {
-    width: 400px;
-    height: 400px;
+  width: 500px;
+  height: 500px;
+  display: flex;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    width: 550px;
-    height: 400px;
+  /* width: 550px; */
+  /* height: 400px; */
+  /* position: relative; */
+  z-index: 0;
 }
 
 .name-featured-work {
-    width: 290px;
-    height: 50px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    position: relative;
-    padding-top: 30rem;
+  /* width: 290px; */
+  /* height: 50px; */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  /* position: relative; */
+  /* padding-top: 30rem; */
+  padding-top: 14rem;
 }
 
 .readmore {
-    width: 250px;
-    height: 50px;
-    padding-top: 9rem;
-    text-align: center;
-    color: white;
+  /* width: 250px; */
+  /* height: 50px; */
+  text-align: center;
+  color: white;
 }
 
 .note {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    bottom: 180px;
-    left: 30px;
-    z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  /* position: absolute; */
+  /* bottom: 180px;s */
+  /* left: 30px; */
+  z-index: 1;
 }
 
-.featured-work:hover img {
-    opacity: 0.8;
+.featured-work:hover {
+  opacity: 0.8;
 }
 
 .featured-work:hover .note {
-    opacity: 0.8;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }

@@ -1,10 +1,10 @@
 a,
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a:hover{
-    color: #015b3d;
+a:hover {
+  color: #015b3d;
 }
 
 .green-color {
@@ -83,7 +83,7 @@ a:hover{
 }
 
 .link-page {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 18px;
 }
@@ -104,18 +104,18 @@ a:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 7% 0px 7% 0px;
 }
 
-.btn{
+.btn {
   font-size: 1.1rem;
   text-transform: uppercase;
-  color: #FFFFFF;  
+  color: #ffffff;
   padding: 15px 35px 15px 35px;
-  border-color: #FFFFFF;
+  border-color: #ffffff;
   border-radius: 30px 30px 30px 30px;
   font-weight: bold;
   border-width: 2px;
@@ -124,7 +124,7 @@ a:hover{
 
 .btn:hover {
   color: rgb(0, 190, 125);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .automation {
@@ -136,4 +136,12 @@ a:hover{
 
 .automation-parts img {
   width: 50%;
+}
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature-work {
+  margin: 4rem 0;
 }

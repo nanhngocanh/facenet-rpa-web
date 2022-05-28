@@ -1,16 +1,15 @@
-<div>
-    <div class="contain">
-        <div class="col-md">
-            <div class="featured-work">
-                <a href="#">
-                    <img src="https://sisuadigital.com/wp-content/uploads/2021/10/kekale-kuvitus-400x400.jpg?crop=1" class="img-featured-work" />
-
-                    <div class="note">
-                        <p class="name-featured-work">title</p>
-                        <p class="readmore">Read more</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+<div
+  class="featured-work col-4"
+  style="
+    background-image: url({{ item.backgroundImage }});
+  "
+>
+  <div class="col-md">
+    <a href="#">
+      <div class="note">
+        <p class="name-featured-work">{{ item.title }}</p>
+        <p class="readmore">Read more</p>
+      </div>
+    </a>
+  </div>
 </div>
