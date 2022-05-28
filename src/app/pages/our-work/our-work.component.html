@@ -1,1 +1,131 @@
-<p>our-work works!</p>
+<div class="our-work">
+    <div class="our-work-header">
+        <div class="header-content">
+            <div class="text-header">
+                <h1>Featured work</h1>
+                <p>Since 2014 we have helped our customers 
+                    gain real results in their digital transformation
+                </p>
+                <div class="text-bottom-line">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-part">
+        <h1 class="content-title">
+            Your success is our success
+        </h1>
+        <p class="content-detail">
+            Be inspired by our customers’ stories and read more about our solutions. 
+            Join our satisfied customers, contact us and let’s find the right solution 
+            for you! 
+        </p>
+    </div>
+
+    <div class="our-work-list">
+        <app-our-work-left></app-our-work-left>
+        <app-our-work-right></app-our-work-right>
+    </div>
+
+    <div class="customers">
+        <h1 class="content-title" style="color: #fff;">
+            Your success is our success
+        </h1>
+        <div class="customers-img">
+            <img src="https://sisuadigital.com/wp-content/uploads/2020/05/logoline1.png" 
+            alt="">
+            <img src="https://sisuadigital.com/wp-content/uploads/2020/05/logoline2.png" 
+            alt="">
+        </div>
+    </div>
+    
+    <div class="content-part">
+        <h1 class="content-title">
+            Want to know more? Contact us
+        </h1>
+        <p class="content-detail">
+            Our ambitious and experienced team is eager to solve your 
+            business problems and find the best solution for you. 
+            We want to help you gain real digital benefits with 
+            intelligent automation!
+        </p>
+    </div>
+    
+    <div class="get-touch">
+        <div class="title-form">
+          <h2>Get in touch with us</h2>
+          <img
+            src="https://sisuadigital.com/wp-content/uploads/elementor/thumbs/h1-bg-ox8hj54jn1avha5ehzdiao1uqksfykbu9hun3sc39e.png"
+            alt="Do dai"
+          />
+        </div>
+        <div class="get-in-touch">
+          <div class="contact-with-left col-6">
+            <p>Send us a mesage here and we will get back to you shortly</p>
+            <a href="#">info@sisuadigital.com</a>
+            <br />
+            <p>Bulevardi 30 B 1,</p>
+            <p>00120</p>
+            <p>Helsinki</p>
+          </div>
+          <div class="contact-with-right col-6">
+            <div class="contact-form">
+              <div class="input-form">
+                <label for="firstname"
+                  >First Name <span style="color: red">*</span></label
+                ><br />
+                <input type="text" id="firstname" name="firstname" required />
+              </div>
+  
+              <div class="input-form">
+                <label for="lastname">Last Name </label><br />
+                <input type="text" id="lastname" name="lastname" />
+              </div>
+  
+              <div class="input-form">
+                <label for="email">Email <span style="color: red">*</span></label
+                ><br />
+                <input type="text" id="email" name="email" required />
+              </div>
+  
+              <div class="input-form">
+                <label for="company"
+                  >Company <span style="color: red">*</span></label
+                ><br />
+                <input type="text" id="company" name="company" required />
+              </div>
+  
+              <div class="input-form">
+                <label for="phone">Phone Number </label><br />
+                <input type="text" id="phone" name="phone" />
+              </div>
+  
+              <div class="input-form">
+                <label for="message">Message </label><br />
+                <input type="text" id="message" name="message" />
+              </div>
+              <br />
+              <div class="radio-form">
+                <input
+                  type="radio"
+                  id="anouncement"
+                  name="anouncement"
+                  value="I want to be informed by email about upcoming events, webinars,
+              blogs and white papers."
+                />
+                <label for="anouncement"
+                  >I want to be informed by email about upcoming events, webinars,
+                  blogs and white papers.
+                </label>
+              </div>
+  
+              <div class="submit-form">
+                <!-- <label for="message">Message </label><br /> -->
+                <app-button [content]="'Submit'"></app-button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

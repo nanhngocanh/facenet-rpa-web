@@ -1,0 +1,95 @@
+img {
+    width: 260px;
+    height: 10px;
+}
+
+.management {
+    width: 370px;
+    padding-top: 4rem;
+    padding-left: 120px;
+    text-align: center;
+    float: left;
+    background: #F2F2F2;
+}
+
+.management-title {
+    padding-bottom: 2rem;
+}
+
+h4 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00734D;
+}
+
+.management-content {
+    border: 3px solid white;
+    width: 300px;
+    height: 550px;
+    position: relative;
+    background-color: white;
+}
+
+.img-people {
+    width: 270px;
+    height: 350px;
+    padding: 0.5rem;
+}
+
+.img-people-management {
+    width: 120px;
+    height: 10px;
+}
+
+.management div:hover {
+    border-bottom: 3px soild #00BE7D;
+}
+
+.management-in i {
+    background-image: radial-gradient(circle, #456BD9, #456BD9 66%, transparent 66%);
+    height: 5em;
+    width: 5em;
+}
+
+.name-people {
+    font-weight: bold;
+    color: #00734D;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    background: black;
+    border-radius: 20px;
+}
+
+.management-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.management-content .img-people {
+    width: 300px;
+    height: auto;
+}
+
+.management-content:hover {
+    transform: translateY(-20px);
+}
+
+.management-content:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #00BE7D;
+}

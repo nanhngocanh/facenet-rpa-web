@@ -1,1 +1,28 @@
-<p>insight works!</p>
+<div class="our-work-header">
+  <div class="header-content">
+      <div class="text-header">
+          <h1>Insights</h1>
+          <p>Insights gathers our news, blog and 
+            other material related to intelligent automation and RPA
+          </p>
+      </div>
+  </div>
+</div>
+
+<div class="insight-block">
+  <h1 style="margin-top: 10rem; text-align: center">News and blog posts</h1>
+  <div class="insight-list" style="display: flex; margin: 3rem">
+    <ng-container *ngFor="let item of items">
+      <app-thumbnail-post [thumbnail_post]="item"></app-thumbnail-post>
+    </ng-container>
+  </div>
+</div>
+
+<div class="insight-block">
+  <h1 style="margin-top: 10rem; text-align: center">Tweets by Sisua</h1>
+  <div class="insight-list" style="display: flex; margin: 3rem">
+    <ng-container *ngFor="let item of twitters">
+      <app-twitter-post [twitter_post]="item"></app-twitter-post>
+    </ng-container>
+  </div>
+</div>

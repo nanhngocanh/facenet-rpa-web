@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CareerComponent } from './pages/career/career.component';
 import { InsightComponent } from './pages/insight/insight.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     InsightComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

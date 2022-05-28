@@ -1,1 +1,74 @@
-<p>homepage works!</p>
+<div class="homepage">
+  <div class="homepage-header">
+    <h1>SISUAL_DIGITAL</h1>
+    <p class="homepage-text">
+      Accelerate your digital transformation with intelligent automation
+    </p>
+  </div>
+
+  <div class="more-info">
+    <h1 class="title">Growth and productivity from intelligent automation</h1>
+    <div class="row growth-productivity">
+      <div class="col-sm-4 growth-productivity-section">
+        <h3 class="sub-title text-center">
+          RPA AND AI SERVICES THAT BOOST PRODUCTIVITY
+        </h3>
+        <div class="bottom-line"></div>
+        <p class="more-info-content">
+          We provide digital tools that save time and remove monotonous routine
+          work, allowing your employees to focus on more valuable tasks in your
+          business.
+        </p>
+        <a href="#"><span class="link-page">OUR SERVICES</span></a>
+      </div>
+
+      <div class="col-sm-4 growth-productivity-section">
+        <h3 class="sub-title text-center">
+          AUTOMATION SOLUTIONS FOR DIFFERENT INDUSTRIES
+        </h3>
+        <div class="bottom-line"></div>
+        <p class="more-info-content">
+          Digitalizing business processes creates numerous benefits for
+          companies’ from different sectors or within their key functions.
+        </p>
+        <a href="#"><span class="link-page">INDUSTRY SOLUTIONS</span></a>
+      </div>
+
+      <div class="col-sm-4 growth-productivity-section">
+        <h3 class="sub-title text-center">
+          PIONEERS OF BUSINESS PROCESS AUTOMATION
+        </h3>
+        <div class="bottom-line"></div>
+        <p class="more-info-content">
+          Solving our customers’ business challenges with automation solutions
+          has been our uncompromised principle since 2014.
+        </p>
+        <a href="#"><span class="link-page">OUR STORY</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="free-consultation">
+    <h1 class="title">Book a free consultation with us</h1>
+    <p class="homepage-text">
+      Want to know how intelligent automation could benefit your company? Tell
+      us about your automation needs <br />
+      and let’s find the right solution for your company together.
+    </p>
+    <button class="btn">BOOK HERE</button>
+  </div>
+
+  <div class="feature-work">
+    <h1 class="title" style="color: #00734d; text-align: center">
+      Feature work
+    </h1>
+    <div class="feature-list">
+      <ng-container *ngFor="let item of items">
+        <app-featured-work
+          [item]="item"
+          style="display: inline-block"
+        ></app-featured-work>
+      </ng-container>
+    </div>
+  </div>
+</div>

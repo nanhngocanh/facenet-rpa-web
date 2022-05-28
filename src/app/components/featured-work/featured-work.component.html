@@ -1,1 +1,15 @@
-<p>featured-work works!</p>
+<div
+  class="featured-work col-4"
+  style="
+    background-image: url({{ item.backgroundImage }});
+  "
+>
+  <div class="col-md">
+    <a href="#">
+      <div class="note">
+        <p class="name-featured-work">{{ item.title }}</p>
+        <p class="readmore">Read more</p>
+      </div>
+    </a>
+  </div>
+</div>
