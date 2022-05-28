@@ -1,4 +1,4 @@
-<div class="twitter-post col-sm-4">
+<div class="twitter-post">
     <div class="twitter-post-head">
         <a href="#" class="twitter-post-item">
             <img src="	https://pbs.twimg.com/profile_images/1356889151967277057/8RDaDxeW_normal.png"
@@ -11,13 +11,13 @@
             </div>
         </a>
         <div class="published-time">
-            <span>{{twitter_post.publish_time}}</span>
+            <span>{{twitter_post.publishDate}}</span>
         </div>
     </div>
 
     <div class="twitter-post-content">
         <p class="short-content">
-            {{twitter_post.twitter_content}}
+            {{ twitter_post.description }}
         </p>
         <a href="#" class="read-more">
             Read More »

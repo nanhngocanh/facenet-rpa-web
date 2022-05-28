@@ -1,0 +1,50 @@
+.our-work-header {
+    background-image: url(https://sisuadigital.com/wp-content/uploads/2021/04/northern-lights-lake-crop.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 0px -100px;
+    background-size: cover;
+    min-height: 31.2rem;
+    position: relative;
+    top: 0%;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 31.2rem;
+}
+
+.text-header {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    text-align: center;
+}
+
+.text-header h1, 
+.text-header p {
+    color: #fff;
+}
+
+.text-header h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-header p {
+    font-size: 1.1rem;
+}
+
+.text-bottom-line {
+    background-color: #00BE7D;
+    width: 13rem;
+    height: 0.3rem;
+}
+
+.insight-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
