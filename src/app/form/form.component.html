@@ -1,0 +1,17 @@
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input formControlName="name" type="text" class="form-control"/>
+
+    <label for="age">Age</label>
+    <input formControlName="age" type="text" class="form-control"/>
+
+    <label for="address">Address</label>
+    <input formControlName="address" type="text" class="form-control"/>
+
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+<div>{{ studentForm.value | json }}</div>
+<div> {{studentForm.controls['age'].errors | json}}</div>

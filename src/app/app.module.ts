@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MyServiceService } from './my-service.service';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +28,9 @@ import { CareerComponent } from './pages/career/career.component';
 import { InsightComponent } from './pages/insight/insight.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { RouterModule } from '@angular/router';
+import { FormComponent } from './form/form.component';
+import { TestComponent } from './test/test.component';
+import { ExelTestComponent } from './exel-test/exel-test.component';
 
 @NgModule({
   declarations: [
@@ -45,9 +53,12 @@ import { RouterModule } from '@angular/router';
     CareerComponent,
     InsightComponent,
     ContactComponent,
+    FormComponent,
+    TestComponent,
+    ExelTestComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule],
+  providers: [MyServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

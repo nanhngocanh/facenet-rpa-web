@@ -1,0 +1,393 @@
+<div #myModal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">
+        Thêm thông tin kiểm tra
+      </h4>
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+    
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form name="form" (ngSubmit)="(f.form.valid)" #f="ngForm" novalidate>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Lựa chọn file dữ liệu</label>
+              <input
+                type="file"
+                class="form-control"
+                
+                placeholder="Upload file"
+                accept=".csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+              />
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <button (click)="exportToExcel()">Export file excel</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Lô sản xuất</label>
+              <input
+                [(ngModel)]="formEx.lotNumber"
+                type="text"
+                class="form-control"
+                name="lotNumber"
+                required
+                placeholder="Lô sản xuất"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Ngày kiểm tra</label>
+              <input
+                [(ngModel)]="formEx.checkDate"
+                type="date"
+                class="form-control"
+                name="checkPerson"
+                required
+                placeholder="Người kiểm tra"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row card-body primary-breadcrumb"
+          style="padding: 10px; margin-bottom: 10px"
+        >
+          <h5 style="font-size: 18px; margin-bottom: 0px">Thông số quang</h5>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Quang thông min</label>
+              <input
+                [(ngModel)]="formEx.ectricMin"
+                type="text"
+                class="form-control"
+                name="ectricMin"
+                required
+                placeholder=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Quang thông max</label>
+              <input
+                [(ngModel)]="formEx.ectricMax"
+                type="text"
+                class="form-control"
+                name="ectricMax"
+                required
+                placeholder=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Hiệu xuất min</label>
+              <input
+                [(ngModel)]="formEx.performanceMin"
+                type="text"
+                class="form-control"
+                name="performanceMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Hiệu xuất max</label>
+              <input
+                [(ngModel)]="formEx.performanceMax"
+                type="text"
+                class="form-control"
+                name="performanceMax"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Nhiệt độ màu min</label>
+              <input
+                [(ngModel)]="formEx.colorTempMin"
+                type="text"
+                class="form-control"
+                name="colorTempMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Nhiệt độ màu max</label>
+              <input
+                [(ngModel)]="formEx.colorTempMax"
+                type="text"
+                class="form-control"
+                name="colorTempMax"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Độ trả màu min</label>
+              <input
+                [(ngModel)]="formEx.colorMin"
+                type="text"
+                class="form-control"
+                name="colorMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Độ trả màu max</label>
+              <input
+                [(ngModel)]="formEx.colorMax"
+                type="text"
+                class="form-control"
+                name="colorMax"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row card-body primary-breadcrumb"
+          style="padding: 10px; margin-bottom: 10px"
+        >
+          <h5 style="font-size: 18px; margin-bottom: 0px">Thông số điện</h5>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Điện nguồn min</label>
+              <input
+                [(ngModel)]="formEx.powSupplyMin"
+                type="text"
+                class="form-control"
+                name="powSupplyMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Điện nguồn max</label>
+              <input
+                [(ngModel)]="formEx.powSupplyMax"
+                type="text"
+                class="form-control"
+                name="powSupplyMax"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Dòng điện min</label>
+              <input
+                [(ngModel)]="formEx.powMin"
+                type="text"
+                class="form-control"
+                name="powMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Dòng điện max</label>
+              <input
+                [(ngModel)]="formEx.powMax"
+                type="text"
+                class="form-control"
+                name="powMax"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Công suất min</label>
+              <input
+                [(ngModel)]="formEx.wattageMin"
+                type="text"
+                class="form-control"
+                name="wattageMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Công suất max</label>
+              <input
+                [(ngModel)]="formEx.wattageMax"
+                type="text"
+                class="form-control"
+                name="wattageMax"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Hệ số công suất min</label>
+              <input
+                [(ngModel)]="formEx.coefficientWattageMin"
+                type="text"
+                class="form-control"
+                name="coefficientWattageMin"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Hệ số công suất max</label>
+              <input
+                [(ngModel)]="formEx.coefficientWattageMax"
+                type="text"
+                class="form-control"
+                name="coefficientWattageMax"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="row card-body primary-breadcrumb"
+          style="padding: 10px; margin-bottom: 10px"
+        >
+          <h5 style="font-size: 18px; margin-bottom: 0px">Độ tin cậy</h5>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Số lượng kiểm tra</label>
+              <input
+                [(ngModel)]="formEx.quatity"
+                type="text"
+                class="form-control"
+                name="quatity"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Tỷ lệ đạt</label>
+              <input
+                [(ngModel)]="formEx.ratio"
+                type="text"
+                class="form-control"
+                name="ratio"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Nhiệt độ TS</label>
+              <input
+                [(ngModel)]="formEx.temp"
+                type="text"
+                class="form-control"
+                name="temp"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>TBN(0.5s on/0.5s off)</label>
+              <input
+                [(ngModel)]="formEx.tbn"
+                type="text"
+                class="form-control"
+                name="tbn"
+                required
+                placeholder="TBN(0.5s on/0.5s off)"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Người kiểm tra</label>
+              <input
+                [(ngModel)]="formEx.checkPerson"
+                type="text"
+                class="form-control"
+                name="checkPerson"
+                required
+                placeholder="Người kiểm tra"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Kết luận</label>
+              <select
+                [(ngModel)]="formEx.conclude"
+                class="form-control"
+                name="conclude"
+              >
+                <option value="Đạt">Đạt</option>
+                <option value="Không đạt">Không đạt</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Ghi chú</label>
+          <input
+            [(ngModel)]="formEx.note"
+            type="text"
+            class="form-control"
+            name="note"
+            required
+            placeholder="Ghi chú"
+          />
+        </div>
+
+        <div class="form-group">
+          <button  class="btn btn-success" type="submit">
+            Thêm mới
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- <div class="col-md-8 form-group">        
+    <input type="file" class="form-control" (change)="addfile($event)" placeholder="Upload file" accept=".csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">        
+  </div>  -->

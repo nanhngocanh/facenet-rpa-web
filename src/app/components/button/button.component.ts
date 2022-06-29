@@ -11,6 +11,11 @@ export class ButtonComponent implements OnInit {
 
   constructor() { }
 
+  text ?: string;
+  printText(){
+    return this.text = 'sdjsdjsdsd';
+  }
+
   ngOnInit(): void {
   }
 
